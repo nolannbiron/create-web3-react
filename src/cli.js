@@ -1,8 +1,8 @@
-import arg from 'arg'
-import inquirer from 'inquirer'
-import { createProject } from './main'
+const arg = require('arg')
+const inquirer = require('inquirer')
+const { createProject } = require('./main')
 
-function parseArgumentsIntoOptions(rawArgs: any[]) {
+function parseArgumentsIntoOptions(rawArgs) {
     const args = arg(
         {
             '--skip': Boolean,
@@ -36,7 +36,7 @@ async function promptForMissingOptions(options) {
         }
     }
 
-    const questions: any[] = []
+    const questions = []
     if (!options.template) {
         questions.push({
             type: 'list',
@@ -65,7 +65,7 @@ async function promptForMissingOptions(options) {
     }
 }
 
-export async function cli(args: any) {
+export async function cli(args) {
     let options = parseArgumentsIntoOptions(args)
     options = await promptForMissingOptions(options)
     await createProject(options)

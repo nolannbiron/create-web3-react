@@ -1,14 +1,13 @@
 {
     "name": "create-web3-react",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "Build fast web3 react app.",
-    "type": "module",
-    "main": "src/index.ts",
+    "main": "src/index.js",
     "directories": {
         "doc": "docs"
     },
     "bin": {
-        "create-react-web3": "bin/create-project",
+        "create-web3-react": "bin/create-project",
         "create-project": "bin/create-project"
     },
     "publishConfig": {
@@ -20,11 +19,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NolannBiron/create-react-web3.git"
+        "url": "git+https://github.com/NolannBiron/create-web3-react.git"
     },
     "keywords": [
         "cli",
-        "create-react-web3"
+        "create-web3-react"
     ],
     "author": {
         "name": "Nolann Biron",
@@ -33,9 +32,9 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/NolannBiron/create-react-web3/issues"
+        "url": "https://github.com/NolannBiron/create-web3-react/issues"
     },
-    "homepage": "https://github.com/NolannBiron/create-react-web3#readme",
+    "homepage": "https://github.com/NolannBiron/create-web3-react#readme",
     "files": [
         "bin/",
         "src/",
@@ -57,7 +56,6 @@
         "listr": "^0.14.3",
         "ncp": "^2.0.0",
         "npm-auto-version": "^1.0.0",
-        "pkg-install": "^1.0.0",
-        "typescript": "^4.7.4"
+        "pkg-install": "^1.0.0"
     }
 }

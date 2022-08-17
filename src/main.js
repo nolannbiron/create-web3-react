@@ -1,11 +1,11 @@
-import chalk from 'chalk'
-import fs from 'fs'
-import ncp from 'ncp'
-import path from 'path'
-import { promisify } from 'util'
-import Listr from 'listr'
-import { projectInstall } from 'pkg-install'
-import { execa } from 'execa'
+const chalk = require('chalk')
+const fs = require('fs')
+const ncp = require('ncp')
+const path = require('path')
+const { promisify } = require('util')
+const Listr = require('listr')
+const { projectInstall } = require('pkg-install')
+const { execa } = require('execa')
 
 const access = promisify(fs.access)
 const copy = promisify(ncp)
