@@ -1,0 +1,60 @@
+{
+    "name": "typescript",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ethersproject/experimental": "^5.6.3",
+        "@ethersproject/units": "^5.6.1",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@web3-react/coinbase-wallet": "^8.0.34-beta.0",
+        "@web3-react/core": "8.0.35-beta.0",
+        "@web3-react/eip1193": "^8.0.26-beta.0",
+        "@web3-react/empty": "^8.0.20-beta.0",
+        "@web3-react/gnosis-safe": "^8.0.6-beta.0",
+        "@web3-react/metamask": "8.0.28-beta.0",
+        "@web3-react/network": "^8.0.27-beta.0",
+        "@web3-react/types": "8.0.20-beta.0",
+        "@web3-react/url": "^8.0.25-beta.0",
+        "@web3-react/walletconnect": "8.0.35-beta.0",
+        "ethers": "^5.6.9",
+        "react": "^18.2.0",
+        "react-app-rewired": "^2.2.1",
+        "react-dom": "^18.2.0",
+        "react-scripts": "5.0.1",
+        "typescript": "^4.7.4",
+        "web-vitals": "^2.1.4",
+        "web3": "^1.7.5"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.11.49",
+        "@types/react": "^18.0.17",
+        "@types/react-dom": "^18.0.6"
+    },
+    "scripts": {
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-app-rewired eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

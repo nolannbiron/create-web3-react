@@ -1,43 +1,63 @@
 {
-  "name": "create-react-web3",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.49",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "create-web3-react",
+    "version": "1.0.0",
+    "description": "Build fast web3 react app.",
+    "type": "module",
+    "main": "src/index.ts",
+    "directories": {
+        "doc": "docs"
+    },
+    "bin": {
+        "create-react-web3": "bin/create-project",
+        "create-project": "bin/create-project"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "prepublish": "npm-auto-version",
+        "postpublish": "git push origin --tags"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NolannBiron/create-react-web3.git"
+    },
+    "keywords": [
+        "cli",
+        "create-react-web3"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "author": {
+        "name": "Nolann Biron",
+        "email": "nolann.biron@ynov.com",
+        "url": "https://github.com/NolannBiron"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/NolannBiron/create-react-web3/issues"
+    },
+    "homepage": "https://github.com/NolannBiron/create-react-web3#readme",
+    "files": [
+        "bin/",
+        "src/",
+        "templates/"
+    ],
+    "devDependencies": {
+        "@types/esm": "^3.2.0",
+        "@types/inquirer": "^9.0.1",
+        "@types/listr": "^0.14.4",
+        "@types/ncp": "^2.0.5",
+        "@types/node": "^18.7.6"
+    },
+    "dependencies": {
+        "arg": "^5.0.1",
+        "chalk": "^2.4.1",
+        "esm": "^3.2.25",
+        "execa": "^6.1.0",
+        "inquirer": "^8.2.2",
+        "listr": "^0.14.3",
+        "ncp": "^2.0.0",
+        "npm-auto-version": "^1.0.0",
+        "pkg-install": "^1.0.0",
+        "typescript": "^4.7.4"
+    }
 }
