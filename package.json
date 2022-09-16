@@ -1,14 +1,14 @@
 {
     "name": "create-web3-react",
-    "version": "1.0.4",
+    "version": "1.0.1",
     "description": "Build fast web3 react app.",
     "main": "src/index.js",
     "directories": {
         "doc": "docs"
     },
     "bin": {
-        "create-web3-react": "bin/create-project",
-        "create-project": "bin/create-project"
+        "create-web3-react": "bin/create-project.js",
+        "create-project": "bin/create-project.js"
     },
     "publishConfig": {
         "access": "public"
@@ -56,6 +56,7 @@
         "listr": "^0.14.3",
         "ncp": "^2.0.0",
         "npm-auto-version": "^1.0.0",
-        "pkg-install": "^1.0.0"
+        "pkg-install": "^1.0.0",
+        "require": "^2.4.20"
     }
 }
